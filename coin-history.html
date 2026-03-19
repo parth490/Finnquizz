@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Finquizz">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Finquizz</title>
+    <meta name="description" content="Finquizz">
+    <meta name="keywords" content="Finquizz">
+    <link rel="icon" href="assets/images/favicon.png">     
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="overlay"></div>
+        <header class="site-header d-flex align-items-center justify-content-between">
+            <div class="header-left d-flex align-items-center"> 
+                <div class="mobile-menu mobile-only">
+                    <button class="mobile-menu-button">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </button>
+                </div>
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Fin</span><span class="logo-highlight">Quizz</span>
+                </a>
+            </div> 
+            <div class="header-right d-flex align-items-center"> 
+                <div class="coins d-flex align-items-center">
+                    <img src="./assets/images/coin.png" alt="coins" />
+                    <a href="coin-history.html" class="coin-info d-flex align-items-center">
+                        <span class="coin-count">150</span>
+                        <span class="coin-label">Coins</span>
+                    </a> 
+                </div> 
+                <button class="notification-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <g clip-path="url(#clip0_7040_6)">
+                            <path
+                                d="M16.2554 13.915C15.7732 13.4852 15.3511 12.9924 15.0004 12.45C14.6171 11.7014 14.3876 10.8837 14.3254 10.045V7.57501C14.3287 6.25782 13.8509 4.98475 12.9818 3.995C12.1126 3.00525 10.912 2.36694 9.60539 2.20001V1.55501C9.60539 1.37798 9.53506 1.2082 9.40988 1.08302C9.2847 0.957838 9.11492 0.887512 8.93789 0.887512C8.76086 0.887512 8.59108 0.957838 8.4659 1.08302C8.34072 1.2082 8.27039 1.37798 8.27039 1.55501V2.21001C6.97552 2.38898 5.78938 3.03114 4.93165 4.01757C4.07393 5.00399 3.60276 6.26783 3.60539 7.57501V10.045C3.54317 10.8837 3.31366 11.7014 2.93039 12.45C2.58583 12.9912 2.17049 13.4839 1.69539 13.915C1.64206 13.9619 1.59931 14.0195 1.57 14.0842C1.54069 14.1489 1.52548 14.219 1.52539 14.29V14.97C1.52539 15.1026 1.57807 15.2298 1.67184 15.3236C1.76561 15.4173 1.89278 15.47 2.02539 15.47H15.9254C16.058 15.47 16.1852 15.4173 16.2789 15.3236C16.3727 15.2298 16.4254 15.1026 16.4254 14.97V14.29C16.4253 14.219 16.4101 14.1489 16.3808 14.0842C16.3515 14.0195 16.3087 13.9619 16.2554 13.915ZM2.56539 14.47C3.03049 14.0205 3.44007 13.5169 3.78539 12.97C4.26829 12.066 4.54973 11.0681 4.61039 10.045V7.57501C4.59056 6.98903 4.68885 6.40505 4.89941 5.85785C5.10997 5.31064 5.4285 4.8114 5.83601 4.38986C6.24353 3.96832 6.73171 3.6331 7.27148 3.40415C7.81125 3.1752 8.39157 3.05722 8.97789 3.05722C9.56421 3.05722 10.1445 3.1752 10.6843 3.40415C11.2241 3.6331 11.7122 3.96832 12.1198 4.38986C12.5273 4.8114 12.8458 5.31064 13.0564 5.85785C13.2669 6.40505 13.3652 6.98903 13.3454 7.57501V10.045C13.406 11.0681 13.6875 12.066 14.1704 12.97C14.5157 13.5169 14.9253 14.0205 15.3904 14.47H2.56539Z"
+                                fill="white" />
+                            <path
+                                d="M9.00016 17.14C9.31512 17.1327 9.61738 17.0143 9.85346 16.8057C10.0895 16.5971 10.2442 16.3117 10.2902 16H7.66016C7.70739 16.3202 7.86932 16.6123 8.11581 16.822C8.3623 17.0317 8.67657 17.1447 9.00016 17.14Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_7040_6">
+                                <rect width="18" height="18" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main class="main-wrp">  
+ 
+        <section class="coin-history-section ">
+            <div class="container"> 
+                <h2>Coins History</h2>
+                <div class="coin-history-cards">  
+                    <div class="coin-card">
+                        <div class="coin-left">
+                            <img src="./assets/images/card-1.png" alt="Stock Exchange">
+                        </div> 
+                        <div class="coin-center">
+                            <h4>STOCK EXCHANGE</h4>
+                            <p>September 5th 2025</p>
+                        </div>
+                        <div class="coin-right">
+                            <span class="coin-status paid">Paid</span>
+                            <div class="coin-value">
+                                <img src="./assets/images/coin.png" alt="coin">
+                                <strong>30</strong>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="coin-card">
+                        <div class="coin-left">
+                            <img src="./assets/images/card-7.png" alt="Reward Coins">
+                        </div>
+                        <div class="coin-center">
+                            <h4>Reward Coins</h4>
+                            <p>September 5th 2025</p>
+                        </div>
+                        <div class="coin-right">
+                            <span class="coin-status earned">Earned</span>
+                            <div class="coin-value">
+                                <img src="./assets/images/coin.png" alt="coin">
+                                <strong>100</strong>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="coin-card">
+                        <div class="coin-left">
+                            <img src="./assets/images/card-2.png" alt="Reward Coins">
+                        </div>
+                        <div class="coin-center">
+                            <h4>Insurance</h4>
+                            <p>September 5th 2025</p>
+                        </div>
+                         <div class="coin-right">
+                            <span class="coin-status paid">Paid</span>
+                            <div class="coin-value">
+                                <img src="./assets/images/coin.png" alt="coin">
+                                <strong>80</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin-card">
+                        <div class="coin-left">
+                            <img src="./assets/images/card-1.png" alt="Reward Coins">
+                        </div>
+                        <div class="coin-center">
+                            <h4>Stock Exchange</h4>
+                            <p>September 5th 2025</p>
+                        </div>
+                        <div class="coin-right">
+                            <span class="coin-status earned">Earned</span>
+                            <div class="coin-value">
+                                <img src="./assets/images/coin.png" alt="coin">
+                                <strong>100</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin-card">
+                        <div class="coin-left">
+                            <img src="./assets/images/card-3.png" alt="Reward Coins">
+                        </div>
+                        <div class="coin-center">
+                            <h4>Finance</h4>
+                            <p>September 5th 2025</p>
+                        </div>
+                        <div class="coin-right">
+                            <span class="coin-status earned">Earned</span>
+                            <div class="coin-value">
+                                <img src="./assets/images/coin.png" alt="coin">
+                                <strong>100</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin-card">
+                        <div class="coin-left">
+                            <img src="./assets/images/card-4.png" alt="Reward Coins">
+                        </div>
+                        <div class="coin-center">
+                            <h4>Term Insurance</h4>
+                            <p>September 5th 2025</p>
+                        </div>
+                        <div class="coin-right">
+                            <span class="coin-status earned">Earned</span>
+                            <div class="coin-value">
+                                <img src="./assets/images/coin.png" alt="coin">
+                                <strong>100</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coin-card">
+                        <div class="coin-left">
+                            <img src="./assets/images/card-2.png" alt="Reward Coins">
+                        </div>
+                        <div class="coin-center">
+                            <h4>Insurance</h4>
+                            <p>September 5th 2025</p>
+                        </div>
+                         <div class="coin-right">
+                            <span class="coin-status paid">Paid</span>
+                            <div class="coin-value">
+                                <img src="./assets/images/coin.png" alt="coin">
+                                <strong>80</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </section> 
+        </main>   
+         <!-- mobile-menu start here -->
+        <div class="mobile-menu-wrapper">
+            <div class="menu-header">
+                <div class="menu-close-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                        <path fill="#24272a"
+                            d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="profile-menu-header d-flex align-items-center">
+                    <img src="./assets/images/profile.png" alt="User Avatar" class="avatar">
+                    <div class="profile-info">
+                        <h3 class="username">Guest</h3>
+                        <p class="subtitle">Play Quiz &amp; earn coins</p>
+                        <a href="login.html" class="signin-btn">SIGN IN</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mobile-menu-bar">
+                <ul>
+                    <li class="mobile-item">
+                        <a href="contest-rules.html" tabindex="0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <g clip-path="url(#clip0_7067_9)">
+                                <path d="M21.4313 17.1375V12.8531H8.56875V17.1375H0V30H30V17.1375H21.4313ZM8.56875 28.5656H1.43437V18.5719H8.56875V28.5656ZM19.9969 28.5656H10.0031V14.2875H19.9969V28.5656ZM28.575 28.5656H21.4313V18.5719H28.575V28.5656Z" fill="white"/>
+                                <path d="M27.1406 19.9969H22.8562V21.4313H25.7156V22.8562H22.8562V24.2812H25.7156V25.7156H22.8562V27.1406H27.1406V19.9969ZM24.2906 5.70938H27.1406V7.14375H24.2906V5.70938ZM22.8562 0H24.2906V1.425H22.8562V0ZM21.4313 1.425H22.8562V2.85937H21.4313V1.425ZM17.1469 21.4313H15.7125V15.7125H12.8625V17.1375H14.2875V21.4313H12.8625V22.8562H17.1469V21.4313ZM14.2875 0H15.7125V2.85937H14.2875V0ZM8.56875 4.28438V9.99375H10.0031V11.4281H19.9969V9.99375H21.4313V4.28438H19.9969V5.70938H18.5719V7.14375H17.1469V5.70938H15.7125V4.28438H14.2875V5.70938H12.8625V7.14375H11.4281V5.70938H10.0031V4.28438H8.56875ZM17.1469 8.56875H18.5719V9.99375H17.1469V8.56875ZM14.2875 8.56875H15.7125V9.99375H14.2875V8.56875ZM11.4281 8.56875H12.8625V9.99375H11.4281V8.56875ZM7.14375 1.425H8.56875V2.85937H7.14375V1.425ZM5.71875 0H7.14375V1.425H5.71875V0ZM7.14375 25.7156H4.28438V24.2812H7.14375V19.9969H2.85938V21.4313H5.71875V22.8562H2.85938V27.1406H7.14375V25.7156ZM2.85938 5.70938H5.71875V7.14375H2.85938V5.70938Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_7067_9">
+                                <rect width="30" height="30" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            Contest Rules
+                        </a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="coin-history.html" tabindex="0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path d="M23.7337 17.4844C24.5638 16.1822 25.0035 14.6693 25.0005 13.125C25.0005 8.6375 21.363 5 16.8755 5C15.2712 5 13.7755 5.465 12.5162 6.26688C11.6781 6.31416 10.8485 6.4606 10.0449 6.70313C10.6553 6.05335 11.3553 5.49397 12.1237 5.04188C13.5542 4.19891 15.1838 3.75295 16.8443 3.75H16.8755C22.053 3.75 26.2505 7.9475 26.2505 13.125C26.2505 13.2092 26.2495 13.2931 26.2474 13.3769L26.2462 13.4069C26.202 14.9818 25.7591 16.5198 24.9587 17.8769C24.5066 18.6453 23.9472 19.3452 23.2974 19.9556C23.5355 19.1663 23.6855 18.3388 23.7337 17.4844Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1075 14.1669C15.9352 13.6793 15.6159 13.2572 15.1937 12.9587C14.7715 12.6602 14.2671 12.4999 13.75 12.5V11.875H12.5V12.5C11.837 12.5 11.2011 12.7634 10.7322 13.2322C10.2634 13.7011 10 14.337 10 15C10 15.663 10.2634 16.2989 10.7322 16.7678C11.2011 17.2366 11.837 17.5 12.5 17.5V20C11.9562 20 11.4931 19.6531 11.3206 19.1669C11.295 19.0873 11.2537 19.0137 11.1992 18.9504C11.1447 18.8871 11.078 18.8353 11.0031 18.7982C10.9282 18.7611 10.8467 18.7394 10.7632 18.7344C10.6798 18.7294 10.5962 18.7411 10.5174 18.769C10.4387 18.7968 10.3662 18.8402 10.3045 18.8965C10.2427 18.9528 10.1929 19.0209 10.158 19.0968C10.123 19.1727 10.1036 19.2549 10.101 19.3384C10.0983 19.4219 10.1124 19.5052 10.1425 19.5831C10.3148 20.0707 10.6341 20.4928 11.0563 20.7913C11.4785 21.0898 11.9829 21.2501 12.5 21.25V21.875H13.75V21.25C14.413 21.25 15.0489 20.9866 15.5178 20.5178C15.9866 20.0489 16.25 19.413 16.25 18.75C16.25 18.087 15.9866 17.4511 15.5178 16.9822C15.0489 16.5134 14.413 16.25 13.75 16.25V13.75C14.2938 13.75 14.7569 14.0969 14.9294 14.5831C14.955 14.6627 14.9963 14.7363 15.0508 14.7996C15.1053 14.8629 15.172 14.9147 15.2469 14.9518C15.3218 14.9889 15.4033 15.0106 15.4868 15.0156C15.5702 15.0206 15.6538 15.0089 15.7326 14.981C15.8113 14.9532 15.8838 14.9098 15.9455 14.8535C16.0073 14.7972 16.0571 14.7291 16.092 14.6532C16.127 14.5773 16.1464 14.4951 16.149 14.4116C16.1517 14.3281 16.1376 14.2448 16.1075 14.1669ZM12.5 13.75C12.1685 13.75 11.8505 13.8817 11.6161 14.1161C11.3817 14.3505 11.25 14.6685 11.25 15C11.25 15.3315 11.3817 15.6495 11.6161 15.8839C11.8505 16.1183 12.1685 16.25 12.5 16.25V13.75ZM13.75 20C14.0815 20 14.3995 19.8683 14.6339 19.6339C14.8683 19.3995 15 19.0815 15 18.75C15 18.4185 14.8683 18.1005 14.6339 17.8661C14.3995 17.6317 14.0815 17.5 13.75 17.5V20Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 16.875C22.5 22.0525 18.3025 26.25 13.125 26.25C7.9475 26.25 3.75 22.0525 3.75 16.875C3.75 11.6975 7.9475 7.5 13.125 7.5C18.3025 7.5 22.5 11.6975 22.5 16.875ZM21.25 16.875C21.25 21.3625 17.6125 25 13.125 25C8.6375 25 5 21.3625 5 16.875C5 12.3875 8.6375 8.75 13.125 8.75C17.6125 8.75 21.25 12.3875 21.25 16.875Z" fill="white"/>
+                            </svg>
+                            Coin History
+                        </a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="javascript:void(0)" id="openReport" tabindex="0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path d="M13.3301 24.375L12.3926 26.25H3.75V0H26.25V17.2705L24.375 13.5205V1.875H5.625V24.375H13.3301ZM9.375 13.125H7.5V11.25H9.375V13.125ZM18.9551 13.125H11.25V11.25H19.8926L18.9551 13.125ZM7.5 16.875H9.375V18.75H7.5V16.875ZM11.25 16.875H17.0801L16.1426 18.75H11.25V16.875ZM9.375 7.5H7.5V5.625H9.375V7.5ZM22.5 7.5H11.25V5.625H22.5V7.5ZM22.5 20.625V25.3125H20.625V20.625H22.5ZM20.625 26.25H22.5V28.125H20.625V26.25ZM30 30H13.125L21.5625 13.125L30 30ZM15.7764 28.3594H27.3486L21.5625 16.7871L15.7764 28.3594Z" fill="white"/>
+                            </svg>
+                            Report an Issue
+                        </a>
+                    </li>  
+                </ul>
+            </div>
+        </div>   
+        <!-- Report Popup -->
+        <div class="report-popup" id="reportPopup">
+            <div class="report-content">
+                <button class="close-report popup-close" id="closeReport">&times;</button>
+                <h3>Report an Issue</h3>
+                <p>What kind of problem have you encountered?</p>
+                <ul>
+                    <li> <input type="radio" name="issue"> It stopped working </li>
+                    <li> <input type="radio" name="issue"> Delayed loading </li>
+                    <li> <input type="radio" name="issue"> Quiz not responding</li>
+                    <li> <input type="radio" name="issue"> Instruction not clear </li>
+                    <li> <input type="radio" name="issue"> Other </li>
+                </ul>  
+                <button class="btn send-btn">Send Feedback</button>
+            </div>
+        </div> 
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+ 
+</body>
+
+</html>
